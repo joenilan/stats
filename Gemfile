@@ -27,6 +27,7 @@ gem 'bootswatch-rails'
 gem 'devise'
 gem 'gritter'
 gem 'protected_attributes'
+gem 'therubyracer'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
