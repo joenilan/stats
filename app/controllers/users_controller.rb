@@ -1,4 +1,4 @@
-class UsersController < ApplicationController::Base
+class UsersController < ApplicationController
     attr_accessor :name, :email
 
   def initialize(attributes = {})

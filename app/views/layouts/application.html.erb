@@ -13,7 +13,7 @@
 
 	<%= yield %>
     <%= render 'layouts/footer' %>
-	<%= js add_gritter(flash[:notice], :image => :notice, :title => "Pay attention!", :sticky => false) %>
+	   <%= js add_gritter(flash[:notice], :image => :notice, :title => "Pay attention!", :time => 3000) %>
     </div>
   </body>
 </html>
