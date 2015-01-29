@@ -1,0 +1,267 @@
+// Example using 'Cerulean' bootswatch
+//
+// First import cerulean variables
+@import "bootswatch/spacelab/variables";
+
+// Then bootstrap itself
+@import "bootstrap";
+
+// And finally bootswatch style itself
+@import "bootswatch/spacelab/bootswatch";
+
+/* universal */
+
+html {
+  overflow-y: auto;
+  height: 100%;
+}
+
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 100%;
+  background: #000;
+  margin-bottom: 0px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* footer */
+
+footer {
+  height: 30px;
+  position: fixed;
+  margin-top: 0px;
+  padding-top: 5px;
+  color: #fff;
+  width: 100%;
+  bottom: 0px;
+  background: #111;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+/* line 6, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_jumbotron.scss */
+.jumbotron {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #111;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height: 100%;
+    background: #fff;
+  }
+
+@media screen and (min-width: 768px) {
+  /* line 6, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_jumbotron.scss */
+  .jumbotron {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #111;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #fff;
+  }
+  /* line 38, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_jumbotron.scss */
+  .container .jumbotron {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display:table; /* add this */
+
+  }
+  .jumbotron:after {
+    clear : both;
+}
+  /* line 43, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_jumbotron.scss */
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 63px;
+  }
+}
+
+/* line 10, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_grid.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100%;
+}
+ 
+.container2 {
+  width:100%;
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 22px;
+  display:table; /* add this */
+  }
+
+.container2:after {
+    clear : both;
+}
+
+
+/* line 14, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+/* line 19, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.container:after {
+  clear: both;
+}
+@media (min-width: 768px) {
+  /* line 10, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_grid.scss */
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 10, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_grid.scss */
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 10, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_grid.scss */
+  .container {
+    width: 1170px;
+  }
+}
+
+/* line 30, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_grid.scss */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 14, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.container-fluid:before, .container-fluid:after {
+  content: " ";
+  display: table;
+}
+/* line 19, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.container-fluid:after {
+  clear: both;
+}
+
+/* line 39, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/_grid.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* line 14, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+/* line 19, /home/bo/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.2.0.2/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.row:after {
+  clear: both;
+}
+
+.navbar {
+  background: #222;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE4E4E4', GradientType=0);
+  filter: none;
+  border: 0px solid #d4d4d4;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.navbar-inverse {
+  background: #222;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6D94BF', endColorstr='#FF3E648D', GradientType=0);
+  filter: none;
+  border: 0px solid #345578;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}

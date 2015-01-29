@@ -1,0 +1,14 @@
+  <div class="container2">
+      <div class="center jumbotron">
+<%= current_user.username %>'s Profile
+  <% if user_signed_in? %>
+    <% if current_user.id == @user.id %>
+      <%= link_to "Edit profile", edit_user_registration_path, class: "btn btn-primary btn-sm pull-right" %>
+    <% end %>
+  <% end %>
+  </h1>
+  <p><b>Name</b><br /><%= current_user if @user %></p>
+  <p><b>Email</b><br /><%= @user.email if @user.email %></p>
+
+    </div>
+  </div>
