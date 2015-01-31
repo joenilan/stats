@@ -1,0 +1,9 @@
+<h1>Users</h1>
+
+<%= link_to "All Users", :action => "index" %>
+<%= = link_to "Users awaiting approval", :action => "index", :approved => "false" %>
+
+<% @users.each do |user| %>
+<% user.email %>
+<% user.approved %>
+<%= link_to "Edit", edit_user_path(user) %>
